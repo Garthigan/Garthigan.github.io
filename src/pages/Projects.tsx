@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../constants/data";
@@ -8,20 +7,21 @@ const Projects = () => {
     <div className="min-h-screen">
       <section className="bg-muted/30 py-20">
         <div className="section-container">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="max-w-4xl mx-auto text-center mb-12"
+            className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="heading-lg mb-6">My Projects</h1>
+            <h1 className="heading-lg mb-4">Projects</h1>
             <p className="text-lg text-muted-foreground">
-              A showcase of my machine learning and data engineering projects
+              Open-source implementations and applied machine learning projects
+              spanning computer vision, edge AI, and NLP.
             </p>
           </motion.div>
         </div>
       </section>
-      
+
       <section className="py-20">
         <div className="section-container">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
