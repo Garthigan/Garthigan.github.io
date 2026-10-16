@@ -176,6 +176,13 @@ const Index = () => (
           </a>
           .
         </p>
+        <p className="text-[12px] text-[#999] mt-3">
+          Design inspired by{" "}
+          <a href="https://brjathu.github.io/" target="_blank" rel="noopener noreferrer" className={linkStyle}>
+            Jathushan Rajasegaran
+          </a>
+          .
+        </p>
       </footer>
 
     </div>
