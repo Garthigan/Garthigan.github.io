@@ -8,6 +8,7 @@ export interface Publication {
   date: string;
   type: "conference" | "workshop" | "journal";
   link?: string;
+  demoUrl?: string;
   label?: string;
   image?: string;
   description?: string;
@@ -57,6 +58,7 @@ export const publications: Publication[] = [
     date: "Jul 2026",
     type: "workshop",
     link: "https://aclanthology.org/2026.dravidianlangtech-1.8/",
+    demoUrl: "https://garthigan.github.io/thirupukal-webpage/",
     image: "/images/research/thiruppugazh-kg.jpg",
     description:
       "A manually annotated knowledge graph built from Thiruppugazh, linking entities, imagery, themes, philosophy, and mythological events across the devotional Tamil corpus.\nEnables computational analysis of low-resource Tamil literature through structured entity and relationship extraction.",

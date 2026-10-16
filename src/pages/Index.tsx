@@ -110,6 +110,21 @@ const Index = () => (
                   {pub.conference}, {pub.location} &mdash; {pub.date}
                 </p>
                 <p className="text-[13px] text-[#888] mt-1">{pubTypeLabel(pub)}</p>
+                {pub.demoUrl && (
+                  <p className="text-[13px] mt-1">
+                    {pub.link && (
+                      <>
+                        <a href={pub.link} target="_blank" rel="noopener noreferrer" className={linkStyle}>
+                          Paper
+                        </a>
+                        {" / "}
+                      </>
+                    )}
+                    <a href={pub.demoUrl} target="_blank" rel="noopener noreferrer" className={linkStyle}>
+                      Demo
+                    </a>
+                  </p>
+                )}
                 {pub.description && (
                   <p className="text-[14px] text-black mt-2 leading-[1.5]">
                     {pub.description.split("\n").map((line, i) => (
