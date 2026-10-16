@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BioText from "../components/BioText";
 import { aboutMe, publications, education } from "../constants/data";
 
@@ -50,6 +51,10 @@ const Index = () => (
             <a href={`mailto:${aboutMe.email}`} className={linkStyle}>
               Email
             </a>
+            {" / "}
+            <Link to="/bio" className={linkStyle}>
+              Bio
+            </Link>
             {" / "}
             <a href={aboutMe.links.scholar} target="_blank" rel="noreferrer" className={linkStyle}>
               Google Scholar
