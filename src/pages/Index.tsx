@@ -177,9 +177,9 @@ const Index = () => (
           .
         </p>
         <p className="text-[12px] text-[#999] mt-3">
-          Design inspired by{" "}
+          Website source from Jathushan Rajasegaran{" "}
           <a href="https://brjathu.github.io/" target="_blank" rel="noopener noreferrer" className={linkStyle}>
-            Jathushan Rajasegaran
+            here
           </a>
           .
         </p>
