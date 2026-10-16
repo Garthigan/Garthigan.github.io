@@ -38,6 +38,15 @@ const Bio = () => (
         </div>
       </header>
 
+      <blockquote className="border-l-[3px] border-[#ddd] pl-5 mb-10">
+        <p className="text-[17px] italic text-black leading-[1.6]">
+          {aboutMe.favouriteQuote.tamil}
+        </p>
+        <p className="text-[14px] text-[#666] mt-1">
+          &ldquo;{aboutMe.favouriteQuote.translation}&rdquo;
+        </p>
+      </blockquote>
+
       <BioText
         text={aboutMe.fullBio}
         className="space-y-4 mb-10"
